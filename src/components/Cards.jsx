@@ -2,14 +2,14 @@ import React from 'react'
 import { Card } from './Card';
 import eth from '../images/eth.jpg';
 import boredApe from '../images/boredApe.jpg';
-import facodex from '../images/facodex.png';
+import code from '../images/portfolio-cards.jpg';
 
 export const Cards = () => {
     const cards = [
         {
             id: 1,
-            title: "MY PORTFOLIO facodex.tech",
-            img: facodex,
+            title: "MY PORTFOLIO",
+            img: code,
             url: 'https://facodex.tech/'
         },
         {
@@ -34,7 +34,7 @@ export const Cards = () => {
                     cards.map((card) => {
                         return (
                             <div className="col-md-4" key={card.id}>
-                                <Card title={card.title} url={card.url} image={card.img}/>
+                                <Card title={card.title} text={card.text} url={card.url} image={card.img}/>
                             </div>
                         )
                     })
